@@ -5,6 +5,13 @@
 soong_namespace {
 	imports: [
 		"vendor/oneplus/sm8150-common",
+        "device/oneplus/sm8150-common",
+        "hardware/qcom/display",
+        "hardware/qcom/display/gralloc",
+        "hardware/qcom/display/libdebug",
+        "vendor/qcom/common/vendor/adreno-r",
+        "vendor/qcom/common/vendor/display/4.14",
+        "vendor/qcom/common/vendor/media-legacy",
 	],
 }
 
@@ -25,6 +32,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -978,6 +986,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1066,6 +1075,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1083,6 +1093,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
