@@ -6,7 +6,7 @@ soong_namespace {
     imports: [
         "vendor/oneplus/sm8150-common",
         "device/oneplus/sm8150-common",
-        "vendor/qcom/common/vendor/media-legacy",
+        "vendor/qcom/common/vendor/media/legacy",
     ],
 }
 
